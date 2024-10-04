@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Task2 Suite" verbose="1">
+    <test name="Task2 Tests">
+        <parameter name="firstWord" value="Hello"/>
+        <parameter name="secondWord" value="world"/>
+        <parameter name="expectedConcat" value="Hello world"/>
+
+        <classes>
+            <class name="task2.Task2Test"/>
+        </classes>
+    </test>
+</suite>
