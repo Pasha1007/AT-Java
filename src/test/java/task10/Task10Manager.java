@@ -5,9 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import java.time.Duration;
 
 //1. Set up ChromeDriver using the driver file and properties.
 //2. Set up ChromeDriver using DriverManager.
@@ -34,14 +37,16 @@ public class Task10Manager {
           driver.get("https://www.demoblaze.com/");
           WebElement loginMenuItem = driver.findElement(By.xpath("//*[@id=\"login2\"]"));
           loginMenuItem.click();
-          WebElement usernameField = driver.findElement(By.xpath("//*[@id=\"loginusername\"]"));
-//          usernameField.click();
-//          usernameField.sendKeys("admin");
-          WebElement loginForm = driver.findElement(By.xpath("//*[@id=\"loginusername\"]/../../.."));
-          loginForm.click();
+
+          WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+          WebElement usernameField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"loginusername\"]")));
+          usernameField.click();
+          usernameField.sendKeys("admin");
+
+          WebElement passwordField = driver.findElement(By.xpath("//*[@id=\"loginpassword\"]"));
+          passwordField.click();
+          passwordField.sendKeys("admin");
+
      }
-     @AfterTest
-     void tearDown() {
-          driver.quit();
-     }
+
 }

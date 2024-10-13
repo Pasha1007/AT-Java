@@ -20,7 +20,7 @@ public class Task10Test {
      void setUp() {
 
           System.setProperty("webdriver.chrome.driver",
-                  "Drivers/chromedriver");
+                  "Drivers/chromedrivermanager");
           driver = new ChromeDriver();
      driver.manage().window().maximize();
      }
