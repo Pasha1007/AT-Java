@@ -10,8 +10,8 @@ import java.net.URISyntaxException;
 import static io.restassured.RestAssured.given;
 
 public class Task16Trello {
-    private static final String APIKEY = "a43a95e7ae1c1fc5ee3cff80c698297b";
-    private static final String TOKEN = "ATTA421024049c6817beb71e7831ac94cce2e1971ff657af78024c1b298d87b980835EA1C637";
+    private static final String APIKEY = "";
+    private static final String TOKEN = "";
    @Test
     void createBoard(){
        Response createBoardRes = given()
