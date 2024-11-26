@@ -10,7 +10,6 @@ import java.net.URISyntaxException;
 import static io.restassured.RestAssured.given;
 
 public class Task16Trello {
-
    @Test
     void createBoard(){
        Response createBoardRes = given()
