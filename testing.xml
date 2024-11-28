@@ -10,6 +10,14 @@
 <!--        </classes>-->
 <!--    </test>-->
 <!--</suite>-->
+<suite name="Parallel Test Suite" parallel="methods" thread-count="4">
+    <test name="Test Browsers">
+        <classes>
+            <class name="frameworkTests.TestDriverPool"/>
+        </classes>
+    </test>
+</suite>
+
 <suite name="Test Suite">
 <listeners>
     <listener class-name="task13.Task13Listener"/>
