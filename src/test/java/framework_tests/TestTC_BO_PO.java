@@ -1,7 +1,7 @@
-package frameworkTests;
+package framework_tests;
 
-import frameworkTests.pages.CartPageBO;
-import frameworkTests.pages.ProductPageBO;
+import framework_tests.pages.CartPageBO;
+import framework_tests.pages.ProductPageBO;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,7 +9,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.CartPage;
-import pages.HomePage;
 import pages.ProductPage;
 
 import static org.testng.Assert.assertEquals;

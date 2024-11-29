@@ -13,7 +13,7 @@
 <suite name="Parallel Test Suite" parallel="methods" thread-count="4">
     <test name="Test Browsers">
         <classes>
-            <class name="frameworkTests.TestDriverPool"/>
+            <class name="framework_tests.TestDriverPool"/>
         </classes>
     </test>
 </suite>

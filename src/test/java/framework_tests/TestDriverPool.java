@@ -1,4 +1,4 @@
-package frameworkTests;
+package framework_tests;
 
 import framework.DriverPool;
 import org.openqa.selenium.WebDriver;

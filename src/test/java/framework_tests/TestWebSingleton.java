@@ -1,4 +1,4 @@
-package frameworkTests;
+package framework_tests;
 
 import framework.WebDriverSingleton;
 import org.openqa.selenium.WebDriver;
