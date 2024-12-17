@@ -19,13 +19,14 @@ public class Task20 {
 
     public void setup() throws Exception {
         DesiredCapabilities capabilities = new DesiredCapabilities();
+
         capabilities.setCapability("platformName", "iOS");
-        capabilities.setCapability("deviceName", "iPhone 16");
-        capabilities.setCapability("platformVersion", "18.1");
-        capabilities.setCapability("automationName", "XCUITest");
-        capabilities.setCapability("app", "/Users/pashakramar/Desktop/task20/build/Release-iphonesimulator/task20.app"); // Path to the .app file.
-        capabilities.setCapability("showXcodeLog", true);
-        driver = new IOSDriver(new URL("http://127.0.0.1:8100/"), capabilities);
+        capabilities.setCapability("appium:deviceName", "iPhone 16 Pro");
+        capabilities.setCapability("appium:platformVersion", "18.1");
+        capabilities.setCapability("appium:automationName", "XCUITest");
+        capabilities.setCapability("appium:app", "/Users/pashakramar/Desktop/task20/build/Release-iphonesimulator/task20.app");
+        capabilities.setCapability("appium:showXcodeLog", true);
+        driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
     }
 
     public void testInputOutOfRange() throws IOException {
