@@ -1,6 +1,6 @@
 package framework_tests;
 
-import framework_tests.pages.LoginPage;
+import framework.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;

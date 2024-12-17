@@ -1,4 +1,4 @@
-package framework_tests.pages;
+package framework.pages;
 
 import org.openqa.selenium.WebDriver;
 

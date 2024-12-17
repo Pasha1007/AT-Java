@@ -1,7 +1,7 @@
 package framework_tests;
 
-import framework_tests.pages.CartPageBO;
-import framework_tests.pages.ProductPageBO;
+import framework.pages.CartPageBO;
+import framework.pages.ProductPageBO;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

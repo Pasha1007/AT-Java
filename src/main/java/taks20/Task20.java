@@ -24,7 +24,8 @@ public class Task20 {
         capabilities.setCapability("platformVersion", "18.1");
         capabilities.setCapability("automationName", "XCUITest");
         capabilities.setCapability("app", "/Users/pashakramar/Desktop/task20/build/Release-iphonesimulator/task20.app"); // Path to the .app file.
-        driver = new IOSDriver(new URL("http://127.0.0.1:4725/wd/hub"), capabilities);
+        capabilities.setCapability("showXcodeLog", true);
+        driver = new IOSDriver(new URL("http://127.0.0.1:8100/"), capabilities);
     }
 
     public void testInputOutOfRange() throws IOException {
