@@ -34,7 +34,7 @@ public class ValidationTests {
         By errorLabel = AppiumBy.accessibilityId("error_label");
 
         int invalidValue = 1000001;
-
+        driver.findElement(inputField).clear();
         driver.findElement(inputField).sendKeys(String.valueOf(invalidValue));
         driver.findElement(submitButton).click();
 
